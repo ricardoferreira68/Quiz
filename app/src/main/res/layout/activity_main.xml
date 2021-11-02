@@ -18,9 +18,9 @@
 
         <TextView
             android:id="@+id/textView7"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/txtDoTextoBase"
+            android:text="Área serverada para o texto base da questão."
             android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold"
@@ -42,12 +42,8 @@
         android:id="@+id/idComando"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
         android:layout_marginTop="1dp"
-        android:text="@string/txtDoComando"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        android:textStyle="bold"
+        android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idContainerTextoBase" />
@@ -67,28 +63,25 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Responder"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idContainerAlternativas" />
+        app:layout_constraintTop_toBottomOf="@+id/idContainerAlternativas"
+        tools:layout_editor_absoluteX="158dp" />
 
     <Button
         android:id="@+id/idBtnSeguir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="1dp"
         android:text="Próxima"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idContainerAlternativas" />
+        app:layout_constraintTop_toBottomOf="@+id/idContainerAlternativas"
+        tools:layout_editor_absoluteX="301dp" />
 
     <Button
         android:id="@+id/idBtnVoltar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
         android:layout_marginTop="16dp"
         android:text="Voltar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idContainerAlternativas" />
+        app:layout_constraintTop_toBottomOf="@+id/idContainerAlternativas"
+        tools:layout_editor_absoluteX="17dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
