@@ -59,18 +59,17 @@
 
     <LinearLayout
         android:id="@+id/idContainerAlternativas"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="0.5dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idComando">
 
         <ListView
             android:id="@+id/idListaAlternativas"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
     <Button
