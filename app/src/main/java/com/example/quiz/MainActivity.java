@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
             "Saída 1, porque a saída C só será zero quando a entrada A for 0 e a entrada B for 0.",
             "A saída C ficará sem energia (saída 0)."};
     ListView lvAlternativas = (ListView) findViewById(R.id.idListaAlternativas);
-    ArrayAdapter<String> adpListaAnternativas = new ArrayAdapter<>(this, R.id.idListaAlternativas, alterantivas);
+    ArrayAdapter<String> adpListaAnternativas = new ArrayAdapter<>(this, R.layout.lista_anternativas, alterantivas);
     // private final EditText txtTextoBase = (EditText) findViewById(R.id.idTextoBase);
 
     @Override
@@ -23,5 +23,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setTitle(txtDisciplina);
+
+        lvAlternativas.setAdapter(adpListaAnternativas);
     }
 }
