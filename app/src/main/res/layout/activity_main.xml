@@ -68,6 +68,7 @@
         app:layout_constraintTop_toBottomOf="@+id/idComando">
 
         <ListView
+            android:id="@+id/idListaAlternativas"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </LinearLayout>
