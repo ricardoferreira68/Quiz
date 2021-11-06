@@ -3,4 +3,5 @@
     <string name="txtTextoBase">Aqui será impresso o texto base da questão.</string>
     <string name="txtDoTextoBase">"A figura ilustra um circuito eletrônico tradicional, com transistores, resistores, fonte e terra, de uma porta lógica NAND. Esse tipo de circuito, utilizado em eletrônica digital, adota a convenção de código 1 para “energizado” e 0 para “sem energia”. Considere que, em um determinado momento, somente a entrada B está energizada, enquanto a entrada A continua sem energia. "</string>
     <string name="txtDoComando">Qual efeito será produzido na saída C nessas condições descritas?</string>
+    <string name="tvTextoAnternativa">dsfd jflkdj fldjflj lfj lkfjs lkfj lkj flkjsdfl sdjflj</string>
 </resources>

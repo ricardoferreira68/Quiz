@@ -26,6 +26,8 @@
             android:id="@+id/idTextoBase"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
             android:text="A figura ilustra um circuito eletrônico tradicional, com transistores, resistores, fonte e terra, de uma porta lógica NAND. Esse tipo de circuito, utilizado em eletrônica digital, adota a convenção de código 1 para “energizado” e 0 para “sem energia”. Considere que, em um determinado momento, somente a entrada B está energizada, enquanto a entrada A continua sem energia. "
             android:textColor="@color/white"
             android:textSize="18sp"
@@ -39,6 +41,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:paddingLeft="5dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/idTextoBase"
             app:srcCompat="@drawable/fig_questao_exemplo" />
@@ -50,6 +53,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:background="@color/azul_agua"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
         android:text="Qual efeito será produzido na saída C nessas condições descritas?"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -66,16 +71,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idComando">
 
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/letra_a" />
-
         <ListView
             android:id="@+id/idListaAlternativas"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="match_parent"
+            android:outlineProvider="none" />
     </LinearLayout>
 
     <Button
@@ -93,6 +93,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
         android:text="Próxima"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idContainerAlternativas" />
@@ -101,6 +102,7 @@
         android:id="@+id/idBtnVoltar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:text="Voltar"
         app:layout_constraintStart_toStartOf="parent"
