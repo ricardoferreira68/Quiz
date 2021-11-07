@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/turquesa_escuro"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/idImgLogo"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/txtDescricaoLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/usuario" />
+
+    <TextView
+        android:id="@+id/idTxtSlogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="cursive"
+        android:text="@string/txtSlogan"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idImgLogo" />
+
+    <ImageView
+        android:id="@+id/idImgEmail"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/txtDescricaoIcnLogin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idTxtSlogan"
+        app:srcCompat="@drawable/ic_baseline_person_24" />
+
+    <EditText
+        android:id="@+id/idTxtLoginEmail"
+        android:layout_width="280sp"
+        android:layout_height="48sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:autofillHints="emailAddress"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/txtDescricaoEmail"
+        android:inputType="textEmailAddress"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textColorHint="@color/cinza_escuro"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/idImgEmail"
+        app:layout_constraintTop_toBottomOf="@+id/idTxtSlogan" />
+
+    <ImageView
+        android:id="@+id/idImgPassword"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/txtDescricaoPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idImgEmail"
+        app:srcCompat="@drawable/ic_baseline_lock_open_24" />
+
+
+    <EditText
+        android:id="@+id/idSenha"
+        android:layout_width="280sp"
+        android:layout_height="48sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints="password"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/txtDescrcaoSenha"
+        android:inputType="textPassword"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textColorHint="@color/cinza_escuro"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/idImgPassword"
+        app:layout_constraintTop_toBottomOf="@+id/idTxtLoginEmail" />
+
+    <Button
+        android:id="@+id/idBtnEntrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:onClick="acionarQuestoes"
+        android:text="@string/txtBtnEntrar"
+        android:textColor="#424242"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idSenha" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

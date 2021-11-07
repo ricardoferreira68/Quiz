@@ -4,4 +4,12 @@
     <string name="txtDoTextoBase">"A figura ilustra um circuito eletrônico tradicional, com transistores, resistores, fonte e terra, de uma porta lógica NAND. Esse tipo de circuito, utilizado em eletrônica digital, adota a convenção de código 1 para “energizado” e 0 para “sem energia”. Considere que, em um determinado momento, somente a entrada B está energizada, enquanto a entrada A continua sem energia. "</string>
     <string name="txtDoComando">Qual efeito será produzido na saída C nessas condições descritas?</string>
     <string name="tvTextoAnternativa">dsfd jflkdj fldjflj lfj lkfjs lkfj lkj flkjsdfl sdjflj</string>
+    <string name="txtDescricaoLogo">Logomarca da aplicação Quiz</string>
+    <string name="txtSlogan">Desafiando o seu conhecimento!</string>
+    <string name="txtDescricaoIcnLogin">Ícone do login do usuário</string>
+    <string name="txtDescricaoEmail">Digite o e-mail</string>
+    <string name="txtDescricaoPassword">Icone da senha de login</string>
+    <string name="txtDescricaoIcnPassword">Icone da senha de login</string>
+    <string name="txtDescrcaoSenha">Digite a senha</string>
+    <string name="txtBtnEntrar">Entrar</string>
 </resources>
