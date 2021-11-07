@@ -1,22 +1,20 @@
 package com.example.quiz;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class MainActivity extends AppCompatActivity {
     private View lastSelectedItem;
-    private int respostaCorreta = 1;
+    private final int respostaCorreta = 1;
     private int alternativaEscolhida = 2;
     private final String txtDisciplina = "LINGUAGEM DE MONTAGEM";
     String[] alterantivas = new String[]{
@@ -31,14 +29,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setTitle(txtDisciplina);
-        Button btnResponder = (Button) findViewById(R.id.idBtnResponder);
+        Button btnResponder = findViewById(R.id.idBtnResponder);
         btnResponder.setEnabled(false);
-        Button btnProxima = (Button) findViewById(R.id.idBtnSeguir);
+        Button btnProxima = findViewById(R.id.idBtnSeguir);
         btnProxima.setEnabled(false);
-        TextView tvTextoBase = (TextView) findViewById(R.id.idTextoBase);
+        TextView tvTextoBase = findViewById(R.id.idTextoBase);
         tvTextoBase.setFocusableInTouchMode(true);
-        ListView lvAlternativas = (ListView) findViewById(R.id.idListaAlternativas);
-        ArrayAdapter<String> adpListaAnternativas = new ArrayAdapter<String>(this, R.layout.lista_anternativas, alterantivas);
+        ListView lvAlternativas = findViewById(R.id.idListaAlternativas);
+        ArrayAdapter<String> adpListaAnternativas = new ArrayAdapter<>(this, R.layout.lista_anternativas, alterantivas);
 
         lvAlternativas.setAdapter(adpListaAnternativas);
 
