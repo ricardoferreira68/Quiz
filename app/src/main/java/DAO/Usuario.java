@@ -1,18 +1,9 @@
 package DAO;
 
-public class usuario {
-    private int id;
+public class Usuario {
     private String email;
     private String nome;
     private String senha;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getEmail() {
         return email;

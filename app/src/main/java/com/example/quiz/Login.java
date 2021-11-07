@@ -1,6 +1,7 @@
 package com.example.quiz;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -8,6 +9,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import DAO.DBacesso;
 
 public class Login extends AppCompatActivity {
 
@@ -19,6 +22,7 @@ public class Login extends AppCompatActivity {
         TextView tvEmail = findViewById(R.id.idTxtLoginEmail);
         TextView tvSenha = findViewById(R.id.idSenha);
         Button btnEntrar = findViewById(R.id.idBtnEntrar);
+        DBacesso db = new DBacesso(this);
 
         btnEntrar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,9 +35,17 @@ public class Login extends AppCompatActivity {
                     if (senha.equals("")) {
                         Toast.makeText(getApplicationContext(), "Digite a senha.", Toast.LENGTH_SHORT).show();
                     } else {
-
-                        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                        startActivity(intent);
+                        Cursor cursor = db.consultarUsuario(email);
+                        if (cursor.getCount()==0){
+                            Toast.makeText(getApplicationContext(), "Usuário não cadastrado", Toast.LENGTH_SHORT).show();
+                        }else{
+                            if (){
+                                Toast.makeText(getApplicationContext(), "Senha inválida", Toast.LENGTH_SHORT).show();
+                            }else{
+                                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                                startActivity(intent);
+                            }
+                        }
                     }
                 }
             }

@@ -12,4 +12,5 @@
     <string name="txtDescricaoIcnPassword">Icone da senha de login</string>
     <string name="txtDescrcaoSenha">Digite a senha</string>
     <string name="txtBtnEntrar">Entrar</string>
+    <string name="txtDescricaoIcnInscrevaSe">Ícone do btão inscreva-se</string>
 </resources>
