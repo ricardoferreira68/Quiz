@@ -12,6 +12,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private View lastSelectedItem;
@@ -34,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
         btnResponder.setEnabled(false);
         Button btnProxima = (Button) findViewById(R.id.idBtnSeguir);
         btnProxima.setEnabled(false);
+        TextView tvTextoBase = (TextView) findViewById(R.id.idTextoBase);
+        tvTextoBase.setFocusableInTouchMode(true);
         ListView lvAlternativas = (ListView) findViewById(R.id.idListaAlternativas);
         ArrayAdapter<String> adpListaAnternativas = new ArrayAdapter<String>(this, R.layout.lista_anternativas, alterantivas);
 
