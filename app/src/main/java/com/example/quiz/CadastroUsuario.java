@@ -27,7 +27,7 @@ public class CadastroUsuario extends AppCompatActivity {
         Button btnSalvar = (Button) findViewById(R.id.idBtnSalvarUsuario);
         Button btnCancelar = (Button) findViewById(R.id.idBtnCancelarUsuario);
         DBacesso db = new DBacesso(this);
-        Usuario cadastro = new Usuario();
+        Usuario usuario = new Usuario();
 
         btnSalvar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,10 +56,10 @@ public class CadastroUsuario extends AppCompatActivity {
                                     if (cursor.getCount()>0){
                                         Toast.makeText(getApplicationContext(), "e-mail já cadastrado!", Toast.LENGTH_SHORT).show();
                                     }else{
-                                        cadastro.setEmail(email);
-                                        cadastro.setNome(nome);
-                                        cadastro.setSenha(senha);
-                                        db.inserirUsuario(cadastro);
+                                        usuario.setEmail(email);
+                                        usuario.setNome(nome);
+                                        usuario.setSenha(senha);
+                                        db.inserirUsuario(usuario);
                                         Toast.makeText(getApplicationContext(), "Cadastrado!", Toast.LENGTH_LONG).show();
                                         finish();
                                     }

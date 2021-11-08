@@ -18,10 +18,7 @@ public class DBacesso extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-         String sentencaSql = "CREATE TABLE IF NOT EXISTS usuario(" +
-                "email TEXT PRIMARY KEY, " +
-                "nome TEXT, " +
-                "senha TEXT);";
+         String sentencaSql = "CREATE TABLE IF NOT EXISTS usuario(email TEXT PRIMARY KEY, nome TEXT, senha TEXT);";
         sqLiteDatabase.execSQL(sentencaSql);
 
         sentencaSql = "INSERT INTO usuario VALUES('ferreira.jose@estacio.br', 'Ricardo Ferreira', '123456');";
