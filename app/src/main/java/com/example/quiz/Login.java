@@ -12,7 +12,6 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import DAO.DBacesso;
-import DAO.Usuario;
 
 public class Login extends AppCompatActivity {
 

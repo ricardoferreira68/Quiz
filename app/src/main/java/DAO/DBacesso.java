@@ -41,7 +41,6 @@ public class DBacesso extends SQLiteOpenHelper {
     // Consultar usuário.
     public Cursor consultarUsuario(String email){
         SQLiteDatabase db = getReadableDatabase();
-        Cursor resultado = db.rawQuery("SELECT * FROM usuario WHERE email=?", new String[]{email});
-        return resultado;
+        return db.rawQuery("SELECT * FROM usuario WHERE email=?", new String[]{email});
     }
 }

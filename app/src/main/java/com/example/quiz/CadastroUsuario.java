@@ -1,14 +1,13 @@
 package com.example.quiz;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.database.Cursor;
 import android.os.Bundle;
-import android.text.Editable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import DAO.DBacesso;
 import DAO.Usuario;
@@ -20,12 +19,12 @@ public class CadastroUsuario extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro_usuario);
 
-        EditText edtNome = (EditText) findViewById(R.id.idEditNome);
-        EditText edtEmail = (EditText) findViewById(R.id.idEditEmail);
-        EditText edtSenha = (EditText) findViewById(R.id.idEditSenha);
-        EditText edtSenha2 = (EditText) findViewById(R.id.idEditSenha2);
-        Button btnSalvar = (Button) findViewById(R.id.idBtnSalvarUsuario);
-        Button btnCancelar = (Button) findViewById(R.id.idBtnCancelarUsuario);
+        EditText edtNome = findViewById(R.id.idEditNome);
+        EditText edtEmail = findViewById(R.id.idEditEmail);
+        EditText edtSenha = findViewById(R.id.idEditSenha);
+        EditText edtSenha2 = findViewById(R.id.idEditSenha2);
+        Button btnSalvar = findViewById(R.id.idBtnSalvarUsuario);
+        Button btnCancelar = findViewById(R.id.idBtnCancelarUsuario);
         DBacesso db = new DBacesso(this);
         Usuario usuario = new Usuario();
 

@@ -43,7 +43,7 @@
             android:layout_width="233dp"
             android:layout_height="219dp"
             android:layout_marginTop="8dp"
-            android:paddingLeft="5dp"
+            android:contentDescription="@string/txtDescricaoImagem"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/idTextoBase"
             app:srcCompat="@drawable/fig_questao_exemplo" />
@@ -58,7 +58,7 @@
         android:background="@color/azul_agua"
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
-        android:text="Qual efeito será produzido na saída C nessas condições descritas?"
+        android:text="@string/txtComando"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -89,7 +89,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Responder"
+        android:text="@string/txtBtnResponder"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idContainerAlternativas" />
@@ -100,7 +100,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
-        android:text="Próxima"
+        android:text="@string/txtBtnProxima"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idContainerAlternativas" />
 
@@ -110,8 +110,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
-        android:onClick="encerrar"
-        android:text="Voltar"
+        android:text="@string/txtBtnVoltar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idContainerAlternativas" />
 

@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setTitle(txtDisciplina);
+        Button btnVoltar = findViewById(R.id.idBtnVoltar);
         Button btnResponder = findViewById(R.id.idBtnResponder);
         btnResponder.setEnabled(false);
         Button btnProxima = findViewById(R.id.idBtnSeguir);
@@ -67,9 +68,13 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-    }
-    public void encerrar(View view){
-        finish();
+
+        btnVoltar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
 
 }

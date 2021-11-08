@@ -1,7 +1,7 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Quiz</string>
     <string name="txtTextoBase">Aqui será impresso o texto base da questão.</string>
-    <string name="txtDoTextoBase">"A figura ilustra um circuito eletrônico tradicional, com transistores, resistores, fonte e terra, de uma porta lógica NAND. Esse tipo de circuito, utilizado em eletrônica digital, adota a convenção de código 1 para “energizado” e 0 para “sem energia”. Considere que, em um determinado momento, somente a entrada B está energizada, enquanto a entrada A continua sem energia. "</string>
+    <string name="txtDoTextoBase" tools:ignore="Typos">"A figura ilustra um circuito eletrônico tradicional, com transistores, resistores, fonte e terra, de uma porta lógica NAND. Esse tipo de circuito, utilizado em eletrônica digital, adota a convenção de código 1 para “energizado” e 0 para “sem energia”. Considere que, em um determinado momento, somente a entrada B está energizada, enquanto a entrada A continua sem energia. "</string>
     <string name="txtDoComando">Qual efeito será produzido na saída C nessas condições descritas?</string>
     <string name="tvTextoAnternativa">dsfd jflkdj fldjflj lfj lkfjs lkfj lkj flkjsdfl sdjflj</string>
     <string name="txtDescricaoLogo">Logomarca da aplicação Quiz</string>
@@ -21,4 +21,9 @@
     <string name="txtRepetirSenha">Digite novamente a senha</string>
     <string name="txtBtnSalvaUsuario">Salvar</string>
     <string name="txtBtnCancelarUsuario">Cancelar</string>
+    <string name="txtDescricaoImagem">Figura integrante do texto base da questão</string>
+    <string name="txtComando">Qual efeito será produzido na saída C nessas condições descritas?</string>
+    <string name="txtBtnResponder">Responder</string>
+    <string name="txtBtnProxima">Próxima</string>
+    <string name="txtBtnVoltar">Voltar</string>
 </resources>
