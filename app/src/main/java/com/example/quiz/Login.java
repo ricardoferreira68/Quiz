@@ -54,6 +54,7 @@ public class Login extends AppCompatActivity {
             }
         });
 
+
         btnCadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -61,5 +62,6 @@ public class Login extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 }

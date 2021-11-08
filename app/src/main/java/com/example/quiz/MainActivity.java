@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
         lvAlternativas.setAdapter(adpListaAnternativas);
 
+
         lvAlternativas.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
@@ -54,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
 
         btnResponder.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("ResourceAsColor")
@@ -69,12 +71,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
         btnVoltar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 finish();
             }
         });
+
     }
 
 }

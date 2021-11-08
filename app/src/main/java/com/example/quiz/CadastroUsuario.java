@@ -62,16 +62,11 @@ public class CadastroUsuario extends AppCompatActivity {
                                         Toast.makeText(getApplicationContext(), "Cadastrado!", Toast.LENGTH_LONG).show();
                                         finish();
                                     }
-
                                 }
                             }
-
                         }
-
                     }
-
                 }
-
             }
         });
 
