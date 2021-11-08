@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/turquesa_escuro"
+    tools:context=".CadastroUsuario">
+
+    <TextView
+        android:id="@+id/idTvCadastroUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="cursive"
+        android:text="@string/txtCadastroUsuario"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textColorHint="@color/cinza_escuro"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/idLabelNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/txtLabelNome"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idTvCadastroUsuario" />
+
+    <EditText
+        android:id="@+id/idEditNome"
+        android:layout_width="280sp"
+        android:layout_height="48sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/txtDescricaoNome"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="@color/cinza_escuro"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:autofillHints="name"
+        app:layout_constraintStart_toEndOf="@+id/idLabelNome"
+        app:layout_constraintTop_toBottomOf="@+id/idTvCadastroUsuario" />
+
+    <TextView
+        android:id="@+id/idLabelEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/txtLabelEmail"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idEditNome" />
+
+    <EditText
+        android:id="@+id/idEditEmail"
+        android:layout_width="280sp"
+        android:layout_height="48sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/txtDescricaoEmail"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:textColorHint="@color/cinza_escuro"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:autofillHints="emailAddress"
+        app:layout_constraintStart_toEndOf="@+id/idLabelEmail"
+        app:layout_constraintTop_toBottomOf="@+id/idEditNome" />
+
+    <TextView
+        android:id="@+id/idLabelSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/txtLabelSenha"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idEditEmail" />
+
+    <EditText
+        android:id="@+id/idEditSenha"
+        android:layout_width="280sp"
+        android:layout_height="48sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints="emailAddress"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/txtDescrcaoSenha"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textColorHint="@color/cinza_escuro"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/idLabelSenha"
+        app:layout_constraintTop_toBottomOf="@+id/idEditEmail" />
+
+    <EditText
+        android:id="@+id/idEditSenha2"
+        android:layout_width="280sp"
+        android:layout_height="48sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints="emailAddress"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/txtRepetirSenha"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textColorHint="@color/cinza_escuro"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/idLabelSenha"
+        app:layout_constraintTop_toBottomOf="@+id/idEditSenha" />
+
+    <Button
+        android:id="@+id/idBtnSalvarUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/txtBtnSalvaUsuario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idEditSenha2" />
+
+    <Button
+        android:id="@+id/idBtnCancelarUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/txtBtnCancelarUsuario"
+        app:layout_constraintStart_toEndOf="@+id/idBtnSalvarUsuario"
+        app:layout_constraintTop_toBottomOf="@+id/idEditSenha2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

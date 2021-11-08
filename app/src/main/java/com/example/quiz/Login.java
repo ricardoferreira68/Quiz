@@ -5,12 +5,14 @@ import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import DAO.DBacesso;
+import DAO.Usuario;
 
 public class Login extends AppCompatActivity {
 
@@ -22,6 +24,7 @@ public class Login extends AppCompatActivity {
         TextView tvEmail = findViewById(R.id.idTxtLoginEmail);
         TextView tvSenha = findViewById(R.id.idSenha);
         Button btnEntrar = findViewById(R.id.idBtnEntrar);
+        ImageButton btnCadastrar = findViewById(R.id.idBtnInscrevaSe);
         DBacesso db = new DBacesso(this);
 
         btnEntrar.setOnClickListener(new View.OnClickListener() {
@@ -39,7 +42,8 @@ public class Login extends AppCompatActivity {
                         if (cursor.getCount()==0){
                             Toast.makeText(getApplicationContext(), "Usuário não cadastrado", Toast.LENGTH_SHORT).show();
                         }else{
-                            if (){
+                            String senhaBanco = "123456";  // cursor.getString(cursor.getColumnIndex("senha"));
+                            if (!(senha.equals(senhaBanco))){
                                 Toast.makeText(getApplicationContext(), "Senha inválida", Toast.LENGTH_SHORT).show();
                             }else{
                                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
@@ -48,6 +52,14 @@ public class Login extends AppCompatActivity {
                         }
                     }
                 }
+            }
+        });
+
+        btnCadastrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), CadastroUsuario.class);
+                startActivity(intent);
             }
         });
     }

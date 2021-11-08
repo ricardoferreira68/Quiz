@@ -13,4 +13,12 @@
     <string name="txtDescrcaoSenha">Digite a senha</string>
     <string name="txtBtnEntrar">Entrar</string>
     <string name="txtDescricaoIcnInscrevaSe">Ícone do btão inscreva-se</string>
+    <string name="txtCadastroUsuario">Cadastro de Usuário</string>
+    <string name="txtLabelNome">Nome:</string>
+    <string name="txtDescricaoNome">Digite o nome</string>
+    <string name="txtLabelEmail">e-mail:</string>
+    <string name="txtLabelSenha">Senha:</string>
+    <string name="txtRepetirSenha">Digite novamente a senha</string>
+    <string name="txtBtnSalvaUsuario">Salvar</string>
+    <string name="txtBtnCancelarUsuario">Cancelar</string>
 </resources>

@@ -35,8 +35,8 @@ public class DBacesso extends SQLiteOpenHelper {
     public void inserirUsuario(Usuario usuario){
         SQLiteDatabase db = getWritableDatabase();
         ContentValues dados = new ContentValues();
-        dados.put("email", usuario.getEmail());
         dados.put("nome", usuario.getNome());
+        dados.put("email", usuario.getEmail());
         dados.put("senha", usuario.getSenha());
         db.insert("usuario",null, dados);
     }
